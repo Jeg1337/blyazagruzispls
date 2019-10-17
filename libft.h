@@ -6,7 +6,7 @@
 /*   By: dnigella <dnigella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 19:35:53 by dnigella          #+#    #+#             */
-/*   Updated: 2019/09/30 20:44:44 by dnigella         ###   ########.fr       */
+/*   Updated: 2019/10/17 19:20:35 by dnigella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,5 +122,12 @@ char	**ft_strsplit(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 #endif
